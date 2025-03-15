@@ -1,4 +1,5 @@
-from pydantic import BaseSettings
+from pydantic_settings import BaseSettings
+
 
 class Settings(BaseSettings):
     DB_DATABASE: str
@@ -16,3 +17,4 @@ class Settings(BaseSettings):
 
 # Instancia global de configuración
 settings = Settings()
+
